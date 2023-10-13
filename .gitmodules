@@ -1,0 +1,9 @@
+[submodule "numeric"]
+	path = numeric
+	url = git@github.com:padawanphysicist/num.c.git
+[submodule "logging"]
+	path = logging
+	url = git@github.com:rxi/log.c.git
+[submodule "unity"]
+	path = unity
+	url = git@github.com:ThrowTheSwitch/Unity.git
