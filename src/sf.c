@@ -17,7 +17,7 @@ num_erfc (const num_t z)
     int status =  gsl_sf_erfc_e(x, &result);
 
     log_debug("status  = %s\n", gsl_strerror(status));
-    log_debug ("erfc(%g) = %.18f +/- % .18f\n",
+    log_debug ("erfc(%g) = %.6e +/- % .6e\n",
                x, result.val, result.err);
     return new(num, result.val, 0.0);
 }
@@ -33,7 +33,7 @@ num_rgamma (const num_t z)
     int status = gsl_sf_gammainv_e(x, &result);
 
     log_debug("status  = %s\n", gsl_strerror(status));
-    log_debug ("1/Gamma(%g) = %.18f +/- % .18f\n",
+    log_debug ("1/Gamma(%g) = %.6e +/- % .6e\n",
                x, result.val, result.err);
     return new(num, result.val, 0.0);
 }
